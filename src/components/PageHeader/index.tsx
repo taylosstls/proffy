@@ -9,9 +9,10 @@ import './styles.css';
 
 interface IHeader {
   title: string;
+  description?: string;
 }
 
-const PageHeader: React.FC<IHeader> = ({ title, children }) => {
+const PageHeader: React.FC<IHeader> = ({ title, description, children }) => {
   return (
     <header className="page-header">
       <div className="top-bar-container">
@@ -24,6 +25,10 @@ const PageHeader: React.FC<IHeader> = ({ title, children }) => {
 
       <div className="header-content">
         <strong>{title}</strong>
+        {description && (
+          <span>{description}</span>
+        )}
+
         {children}
       </div>
 
