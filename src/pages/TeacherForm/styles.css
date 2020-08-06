@@ -56,6 +56,35 @@
   margin-top: 2.4rem;
 }
 
+#page-teacher-form main fieldset .schedule-item+ .schedule-item {
+  margin-top: 3.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--color-line-in-white);
+}
+
+#page-teacher-form main fieldset .schedule-item button {
+  margin-top: 2.4rem;
+  border: 0 none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .8rem;
+  width: 100%;
+  height: 5.6rem;
+  align-self: flex-end;
+  background-color: var(--color-primary);
+  transition: all .3s;
+}
+
+#page-teacher-form main fieldset .schedule-item button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+#page-teacher-form main fieldset .schedule-item button img {
+  height: 3rem;
+}
+
 #page-teacher-form main label {
   color: var(--color-text-complement);
 }
@@ -92,8 +121,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .3s;
   margin-top: 3.2rem;
+  transition: all .3s;
 }
 
 #page-teacher-form main footer button:hover {
@@ -110,8 +139,16 @@
 
   #page-teacher-form main fieldset .schedule-item {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 30px;
     column-gap: 1.6rem;
+  }
+
+  #page-teacher-form main fieldset .schedule-item+ .schedule-item {
+    margin-top: 2.4rem;
+  }
+
+  #page-teacher-form main fieldset .schedule-item button img {
+    height: 2rem;
   }
 
   #page-teacher-form main fieldset .schedule-item .input-block, #page-teacher-form main fieldset .schedule-item .select-block {
