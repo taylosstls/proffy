@@ -13,7 +13,7 @@ const Textarea: React.FC<TextareaProps> = ({ label, name, ...rest }) => {
       <label htmlFor={name}>{label}</label>
       <textarea id={name} {...rest} />
     </div>
-  )
-}
+  );
+};
 
 export default Textarea;

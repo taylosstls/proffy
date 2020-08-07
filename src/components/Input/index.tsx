@@ -13,7 +13,7 @@ const Input: React.FC<InputProps> = ({ label, name, ...rest }) => {
       <label htmlFor={name}>{label}</label>
       <input id={name} type="text" {...rest} />
     </div>
-  )
-}
+  );
+};
 
 export default Input;

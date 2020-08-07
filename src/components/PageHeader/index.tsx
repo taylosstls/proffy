@@ -25,15 +25,12 @@ const PageHeader: React.FC<IHeader> = ({ title, description, children }) => {
 
       <div className="header-content">
         <strong>{title}</strong>
-        {description && (
-          <span>{description}</span>
-        )}
+        {description && <span>{description}</span>}
 
         {children}
       </div>
-
     </header>
   );
-}
+};
 
 export default PageHeader;
