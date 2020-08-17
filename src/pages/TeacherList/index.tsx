@@ -14,6 +14,16 @@ const TeacherList: React.FC = () => {
   const [subject, setSubject] = useState('');
   const [week_day, setWeekDay] = useState('');
   const [time, setTime] = useState('');
+  const options = [
+    { value: 'Artes', label: 'Artes' },
+    { value: 'Biologia', label: 'Biologia' },
+    { value: 'Ed. Física', label: 'Ed. Física' },
+    { value: 'Português', label: 'Português' },
+    { value: 'Matemática', label: 'Matemática' },
+    { value: 'Física', label: 'Física' },
+    { value: 'História', label: 'História' },
+    { value: 'Química', label: 'Química' },
+  ];
 
   async function searchTeachers(e: FormEvent) {
     e.preventDefault();
@@ -40,16 +50,7 @@ const TeacherList: React.FC = () => {
             onChange={(e) => {
               setSubject(e.target.value);
             }}
-            options={[
-              { value: 'Artes', label: 'Artes' },
-              { value: 'Biologia', label: 'Biologia' },
-              { value: 'Ed. Física', label: 'Ed. Física' },
-              { value: 'Português', label: 'Português' },
-              { value: 'Matemática', label: 'Matemática' },
-              { value: 'Física', label: 'Física' },
-              { value: 'História', label: 'História' },
-              { value: 'Química', label: 'Química' },
-            ]}
+            options={options}
           />
 
           <Select
